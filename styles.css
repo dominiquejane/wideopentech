@@ -1,21 +1,25 @@
-html,body {
+html {
 	height: 100%;
 	width: 100%;
 	margin: 0;
+	padding:0
+}
+
+body {
+	width: 100%;
+	height:100%;
 }
 
 header {
-	width: 100%;
-	min-width:1000px;
-	height: 700px;
 	background: url(http://wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.png) no-repeat center center;
-	background-size:100% 100%;
+	background-size:cover;
+	width: 100%;
+	height: auto;
 }
 
 .header-wrap {
 	width:100%;
-	height: 150px;
-	border: 1px solid black;
+	height:100%;
 	line-height:100px;
 	display: inline-block;
 }
@@ -23,8 +27,7 @@ header {
 .button-wrap {
 	width:100%;
 	min-width:400px;
-	height:100%;
-	border: 1px solid pink;
+	height:150px;
 	position:absolute;
 }
 
@@ -53,7 +56,10 @@ li {
 	display: inline-block;
 	margin: 0 10px;
 	color: white;
-	font-family: Arial, sans-serif;
+	font-family: Oswald, sans-serif;
+	font-size: 15px;
+	font-weight:normal;
+	letter-spacing:3px;
 }
 
 li:hover {
@@ -83,11 +89,82 @@ li:hover {
 @media screen and (min-width: 400px) and (max-width: 959px) {
 
 	.disappear {display:none;}
-	.appear {display:inline-block; float:right;}
+	.appear {display:inline-block;}
 
 
 }
 
+.big {
+	height: 250px;
+	width:50%;
+	padding: 100px 0 0 25%;
+}
+
+/* .big-wrap {
+	border: 1px solid purple;
+	height: 100%;
+	width:100%;
+	min-width:695px;
+} */
+
+.big-words {
+	height:200px;
+	width:100%;
+	min-width:575px;
+	line-height: 60px;
+	color:white;
+	margin-left:10px;
+}
+
+.big-words1 {
+	font-size: 25px;
+	text-align:left;
+}
+
+.big-words2 {
+	font-size: 110px;
+	text-align: center;
+	margin:0 5%;
+
+}
+
+.big-words3 {
+	font-size: 20px;
+	position:relative;
+	bottom: 30px;
+	margin:0 15%;
+
+	font-size:60%;
+}
+
+.header-blocks {
+
+	width: 100%;
+	min-height:250px;
+	max-height: 450px;
+	position:relative;
+	margin: 5px;
+	text-align:center;
+}
+
+.big-blocks {
+	height:200px;
+	width: 200px;
+	display: inline-block;
+	-webkit-box-sizing:border-box;
+	margin:0;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition: transform .8s ease-in-out;
+}
+
+.big-blocks:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+#block1 {
+
+}
 
 
 
